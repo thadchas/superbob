@@ -44,10 +44,10 @@ def setup_gemini_tool():
         "orchestrate connections configure -a gemini_api --env live --type team --kind api_key_auth",
         
         # Set credentials for draft
-        "orchestrate connections set-credentials -a gemini_api --env draft --url 'https://generativelanguage.googleapis.com' --api-key 'AIzaSyAOVCtSOiUTMtpxid2jxaSH-nFDntFQKWU'",
+        f"orchestrate connections set-credentials -a gemini_api --env draft --url 'https://generativelanguage.googleapis.com' --api-key '{os.getenv('GEMINI_API_KEY', 'YOUR_GEMINI_API_KEY')}'",
         
         # Set credentials for live
-        "orchestrate connections set-credentials -a gemini_api --env live --url 'https://generativelanguage.googleapis.com' --api-key 'AIzaSyAOVCtSOiUTMtpxid2jxaSH-nFDntFQKWU'",
+        f"orchestrate connections set-credentials -a gemini_api --env live --url 'https://generativelanguage.googleapis.com' --api-key '{os.getenv('GEMINI_API_KEY', 'YOUR_GEMINI_API_KEY')}'",
         
         # Import tool
         "orchestrate tools import --kind python --file superbob/tools/image_gen.py --requirements-file gemini_requirements.txt --app-id gemini_api"

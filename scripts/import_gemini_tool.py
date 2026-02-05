@@ -52,8 +52,8 @@ def import_tool():
         print("   orchestrate connections configure -a gemini_api --env draft --type team --kind api_key_auth")
         print("   orchestrate connections configure -a gemini_api --env live --type team --kind api_key_auth")
         print("\n4. Set the API key credentials:")
-        print("   orchestrate connections set-credentials -a gemini_api --env draft --url 'https://generativelanguage.googleapis.com' --api-key 'AIzaSyAOVCtSOiUTMtpxid2jxaSH-nFDntFQKWU'")
-        print("   orchestrate connections set-credentials -a gemini_api --env live --url 'https://generativelanguage.googleapis.com' --api-key 'AIzaSyAOVCtSOiUTMtpxid2jxaSH-nFDntFQKWU'")
+        print("   orchestrate connections set-credentials -a gemini_api --env draft --url 'https://generativelanguage.googleapis.com' --api-key 'YOUR_GEMINI_API_KEY'")
+        print("   orchestrate connections set-credentials -a gemini_api --env live --url 'https://generativelanguage.googleapis.com' --api-key 'YOUR_GEMINI_API_KEY'")
         print("\n5. Import the tool:")
         print(f"   orchestrate tools import --kind python --file {tool_file} --requirements-file {requirements_file} --app-id gemini_api")
         
