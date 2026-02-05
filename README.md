@@ -122,6 +122,19 @@ SuperBob provides a suite of tools, all designed to be orchestrated securely:
 
 ---
 
+## 🤝 Join the League (Contributing)
+
+SuperBob is an open collaboration. We welcome new heroes to expand the arsenal.
+
+### How to Contribute
+1. **Fork the Fortress** (Fork the repository)
+2. **Create a Sidekick Branch** (`git checkout -b feature/NewSuperPower`)
+3. **Commit Your Gadgets** (`git commit -m 'feat: Add amazing new capability'`)
+4. **Push to the Cloud** (`git push origin feature/NewSuperPower`)
+5. **Signal for Review** (Open a Pull Request)
+
+---
+
 ## 🔐 Security Directives
 
 - **Credential Hygiene**: SuperBob enforces the use of environment variables for secrets. Never hardcode keys.
