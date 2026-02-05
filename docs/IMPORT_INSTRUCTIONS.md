@@ -34,13 +34,9 @@ orchestrate connections configure -a gemini_api --env live --type team --kind ap
 
 ### Step 4: Set Credentials
 ```bash
-orchestrate connections set-credentials -a gemini_api --env draft \
-  --url 'https://generativelanguage.googleapis.com' \
-  --api-key 'AIzaSyCgLJlt6Tgs2WGc-OBXuAhjunzWHpimiOU'
-
-orchestrate connections set-credentials -a gemini_api --env live \
-  --url 'https://generativelanguage.googleapis.com' \
-  --api-key 'AIzaSyCgLJlt6Tgs2WGc-OBXuAhjunzWHpimiOU'
+orchestrate connections set-credentials -a gemini_api --env draft --url 'https://generativelanguage.googleapis.com' --api-key 'YOUR_GEMINI_API_KEY'
+# AND
+orchestrate connections set-credentials -a gemini_api --env live --url 'https://generativelanguage.googleapis.com' --api-key 'YOUR_GEMINI_API_KEY'
 ```
 
 ### Step 5: Import Tool

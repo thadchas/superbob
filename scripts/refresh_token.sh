@@ -22,14 +22,11 @@ echo "[INFO] Configuring connection for live environment..."
 orchestrate connections configure -a gemini_api --env live --type team --kind api_key_auth
 
 echo "[INFO] Setting credentials for draft environment..."
-orchestrate connections set-credentials -a gemini_api --env draft \
-  --url 'https://generativelanguage.googleapis.com' \
-  --api-key 'AIzaSyAOVCtSOiUTMtpxid2jxaSH-nFDntFQKWU'
+orchestrate connections set-credentials -a gemini_api --env draft --url 'https://generativelanguage.googleapis.com' --api-key "$GEMINI_API_KEY"
 
-echo "[INFO] Setting credentials for live environment..."
-orchestrate connections set-credentials -a gemini_api --env live \
-  --url 'https://generativelanguage.googleapis.com' \
-  --api-key 'AIzaSyAOVCtSOiUTMtpxid2jxaSH-nFDntFQKWU'
+# Configure for live
+echo "Setting credentials for live environment..."
+orchestrate connections set-credentials -a gemini_api --env live --url 'https://generativelanguage.googleapis.com' --api-key "$GEMINI_API_KEY"
 
 echo "[INFO] Importing Gemini image generation tool..."
 orchestrate tools import --kind python \
