@@ -1,0 +1,27 @@
+# Environment variables
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+
+# Project specific
+superbob_agent.zip
+.bob/
+.claude/
