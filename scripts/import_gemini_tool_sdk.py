@@ -140,8 +140,8 @@ def import_gemini_tool():
     # Import tool
     print("Step 7: Importing Gemini image generation tool...")
     try:
-        tool_path = Path(__file__).parent / 'gemini_image_tool.py'
-        requirements_path = Path(__file__).parent / 'gemini_requirements.txt'
+        tool_path = Path(__file__).parents[1] / 'superbob' / 'tools' / 'image_gen.py'
+        requirements_path = Path(__file__).parents[1] / 'gemini_requirements.txt'
         
         client.tools.import_tool(
             kind='python',

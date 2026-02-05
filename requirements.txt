@@ -1,0 +1,7 @@
+ibm-watsonx-orchestrate
+requests
+google-generativeai
+selenium
+webdriver-manager
+pyyaml
+python-dotenv

@@ -92,6 +92,23 @@ Generate assets locally without exposing data to public web interfaces.
 python bob_wxo_trigger.py trigger SuperBob_2079Hm "Generate corporate branding assets" --no-wait
 ```
 
+### 4. Enterprise Scripting (Python SDK)
+
+SuperBob lends its powers of valid governance to your own code:
+
+```python
+from superbob.tools.browser import BrowserTool
+from superbob.tools.image_gen import generate_image
+
+# Manifest an asset securely
+image_path = generate_image("A caped robot standing on a server rack")
+
+# Deploy Governed Web Telekinesis
+browser = BrowserTool()
+browser.navigate("https://example.com")
+browser.screenshot("mission_report.png")
+```
+
 ---
 
 ## 🔧 The Toolkit

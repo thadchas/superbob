@@ -75,8 +75,10 @@ class WXOCLIWrapper:
             # Create a Python script that uses the MCP tool
             script = f"""
 import sys
+import os
+# Add project root to path
 sys.path.insert(0, '/Users/thadchaisaenprasert/Desktop/work/SuperBob')
-from wxo_agent_trigger_tool import trigger_wxo_agent
+from superbob.tools.wxo_trigger import trigger_wxo_agent
 
 result = trigger_wxo_agent('{agent_name}', '''{user_input}''')
 import json

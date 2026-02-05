@@ -50,7 +50,7 @@ def setup_gemini_tool():
         "orchestrate connections set-credentials -a gemini_api --env live --url 'https://generativelanguage.googleapis.com' --api-key 'AIzaSyAOVCtSOiUTMtpxid2jxaSH-nFDntFQKWU'",
         
         # Import tool
-        "orchestrate tools import --kind python --file gemini_image_tool.py --requirements-file gemini_requirements.txt --app-id gemini_api"
+        "orchestrate tools import --kind python --file superbob/tools/image_gen.py --requirements-file gemini_requirements.txt --app-id gemini_api"
     ]
     
     print("\n[INFO] Run these commands manually in your terminal:")
